@@ -1,0 +1,260 @@
+:root {
+  --bg-primary: #ffffff;
+  --bg-card-country: #fafafa;
+  --bg-header: #e0dee6;
+  --bg-header_footer: #fae75e;
+  --bg-buttons: #ff605f;
+  --color-font: #1f1f4e;
+  --color-text-footer: rgb(92, 92, 92);
+}
+
+html,
+body,
+.container {
+  height: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* HEADER */
+
+header {
+  background: var(--bg-header);
+  margin: 1rem 2rem;
+  border-radius: 1rem;
+  color: var(--color-font);
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.1);
+}
+
+.content__header {
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.navigation__bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logotipo,
+.list__a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-font);
+  cursor: pointer;
+}
+
+.logo {
+  color: var(--bg-buttons);
+  font-size: 1.6rem;
+  margin-right: 0.5rem;
+}
+
+.title__bold {
+  font-weight: bold;
+}
+
+.list__nav {
+  display: flex;
+  list-style: none;
+}
+
+.list__item {
+  margin: 0 1.5rem;
+}
+
+.main__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 0;
+}
+
+.title {
+  font-size: 3rem;
+  margin-block-end: 0em;
+}
+
+.subtitle {
+  margin-block-start: 0.5rem;
+  margin-block-end: 2.5rem;
+}
+
+.content__list__search {
+  padding: 0 0 1rem 0;
+}
+
+.select {
+  background: var(--bg-header);
+  color: var(--color-font);
+  border: none;
+}
+.select_type {
+  margin-right: 2rem;
+}
+
+.input {
+  padding: 0.75rem;
+  border: none;
+}
+
+.input__first {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.input__header {
+  color: var(--color-font);
+}
+
+.button {
+  color: var(--bg-primary);
+  border-radius: 0 0.5rem 0.5rem 0;
+  background: var(--bg-buttons);
+  border: none;
+  cursor: pointer;
+}
+
+.arrow {
+  padding: 0 1rem;
+}
+
+.footer__header {
+  display: flex;
+  justify-content: space-around;
+  background: var(--bg-header_footer);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.footer__telf {
+  display: flex;
+  align-items: center;
+}
+
+.footer__title {
+  font-size: 2rem;
+}
+
+.parrapf__footer {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding: 0.25rem 1rem;
+}
+
+.footer__phone {
+  font-weight: bold;
+  color: var(--color-font);
+  text-decoration: none;
+  border: solid 2px var(--color-font);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: auto 0;
+}
+
+.phone {
+  margin: 0 1rem 0 3rem;
+}
+
+/* MAIN */
+
+.container__main {
+  color: var(--color-font);
+  width: 60%;
+  margin: 4rem auto;
+}
+
+.content__countries {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 2rem 0;
+}
+
+.content__countries_card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__country {
+  width: 12.5%;
+  cursor: pointer;
+}
+
+.title__country {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-block-end: 0.5rem;
+}
+
+.line__country {
+  height: 0.2rem;
+  border: none;
+  background: var(--bg-header);
+}
+
+.line__active {
+  background: var(--bg-buttons);
+}
+
+/* COUNTRY CARD */
+
+.card__country {
+  margin: 2rem 0;
+  width: 20%;
+  min-width: 13rem;
+  background: var(--bg-card-country);
+  border-radius: 0.75rem;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.card__country:hover {
+  box-shadow: 4px 4px 8px rgba(50, 50, 50, 0.3);
+  transform: translateY(-0.5rem);
+  transition: 0.25s;
+}
+.content__image_country {
+  object-fit: cover;
+  width: 100%;
+  height: 10.5rem;
+  border-radius: 0.75rem 0.75rem 0 0;
+}
+
+.container__text_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.title__card__country {
+  font-size: 2rem;
+  padding: 0 1rem;
+  margin-block-start: 0.25rem;
+  margin-block-end: 0.75rem;
+  font-weight: lighter;
+}
+
+.content__card_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  font-size: 1.05rem;
+  background: var(--bg-buttons);
+  color: var(--bg-card-country);
+  border-radius: 50%;
+  margin: auto 0;
+}
+
+.card__price {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.text__footer_card {
+  font-size: 0.75rem;
+  letter-spacing: 0.05rem;
+  color: var(--color-text-footer);
+}
